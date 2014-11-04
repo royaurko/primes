@@ -8,29 +8,29 @@ parallelization. To run it you need a multicore machine.
 
 ================================================================================================
 
-1. To run the two programs you must have a Haskell compiler installed.
+1.To run the two programs you must have a Haskell compiler installed.
 
-2. Install the parallel package from Hackage. For instance by typing
+2.Install the parallel package from Hackage. For instance by typing
 
  	$cabal install parallel
 
    if you have cabal installed.
 
-3. Install the random package from Hackage. For instance by typing
+3.Install the random package from Hackage. For instance by typing
 
 	$cabal install random
 
-4. To compile type
+4.To compile type
 
 	$ghc -threaded <program name>.hs
 
-5. To run the program use
+5.To run the program use
 	
 	$./<program name> +RTS -N<core>
 
    where <core> is the number of cores your CPU supports.
 
-6. The program prime.hs uses implicit parallelism while parprime.hs uses 
+6.The program prime.hs uses implicit parallelism while parprime.hs uses 
 
    semi-explicit parallelism. Interestingly the parallelism in the first
 
