@@ -22,5 +22,12 @@ parallelization. To run it you need a multicore machine.
 
 4.To compile type
 
-	$ghc <program name>
+	$ghc -threaded <program name>.hs
+
+5.To run the program use
+	
+	$./<program name> +RTS -N<core>
+
+  where <core> is the number of cores your CPU supports.
+
   
