@@ -22,7 +22,7 @@ parallelization. To run it you need a multicore machine.
 
 4.To compile type
 
-	$ghc -threaded -O2 <program name>.hs
+	$ghc -threaded -O2 <program name>.hs --make -fforce-recomp
 
 5.To run the program use
 	
