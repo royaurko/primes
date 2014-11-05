@@ -28,8 +28,3 @@ parallelization. To run it you need a multicore machine.
 	
 	$./<program name> +RTS -N
 
-6.The program prime.hs uses implicit parallelism while parprime.hs uses 
-
-   semi-explicit parallelism. Interestingly the parallelism in the first
-
-   is always faster, while the latter has a peak at about 6 digits.
