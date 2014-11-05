@@ -22,13 +22,11 @@ parallelization. To run it you need a multicore machine.
 
 4.To compile type
 
-	$ghc -threaded <program name>.hs
+	$ghc -threaded -O2 <program name>.hs
 
 5.To run the program use
 	
-	$./<program name> +RTS -N<core>
-
-   where <core> is the number of cores your CPU supports.
+	$./<program name> +RTS -N
 
 6.The program prime.hs uses implicit parallelism while parprime.hs uses 
 
