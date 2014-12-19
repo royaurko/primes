@@ -1,7 +1,9 @@
 #Description
 
 A couple of programs that implement two well known randomized primality testing algorithms:
-Miller-Rabin and Solovay-Strassen in Haskell. The idea was to test Haskell's support for
+[Miller-Rabin](http://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test) and 
+[Solovay-Strassen](http://en.wikipedia.org/wiki/Solovay%E2%80%93Strassen_primality_test) 
+in Haskell. The idea was to test Haskell's support for
 concurrency and parallelization. To run it you need a multicore machine.
 
 #Usage
