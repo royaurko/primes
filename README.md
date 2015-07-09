@@ -1,45 +1,29 @@
-#Description
+# Description
 
 A couple of programs that implement two well known randomized primality testing algorithms:
 [Miller-Rabin](http://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test) and 
 [Solovay-Strassen](http://en.wikipedia.org/wiki/Solovay%E2%80%93Strassen_primality_test) 
 in Haskell. The idea was to test Haskell's support for
-concurrency and parallelization. To run it you need a multicore machine.
+concurrency and parallelization. 
+
+## Dependencies
+- [parallel](https://hackage.haskell.org/package/parallel)
+- [random](https://hackage.haskell.org/package/random)
+- A multicore CPU
 
 #Usage
 
-* To run the two programs you must have a Haskell compiler installed.
+* Compile
 
-* Install the parallel package from Hackage. For instance by typing
-
+```shell
+ghc -threaded -O2 prime.hs --make -fforce-recomp
+ghc -threaded -O2 parprime.hs --make -fforce-recomp
 ```
 
-$ cabal install parallel
+* Run
 
-```
-   at the command prompt, if you have cabal installed.
-
-* Install the random package from Hackage. For instance by typing
-
-```
-
-$ cabal install random
-
-```
-
-* To compile type
-
-```
-
-$ ghc -threaded -O2 <program name>.hs --make -fforce-recomp
-
-```
-
-* To run the program use
-
-```
-
-$ ./<program name> +RTS -N
-
+```shell
+./prime +RTS -N
+./parprime +RTS -N
 ```
 
